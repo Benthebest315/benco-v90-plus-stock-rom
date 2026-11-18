@@ -1,6 +1,6 @@
 # benco-v90-plus-stock-rom
 
-Stock ROM partition dumps and bootloader unlock helper scripts for the **Benco V90 Plus** (Unisoc T606 / UMS9230).
+Stock ROM partition dumps and bootloader unlock helper scripts for the **Benco V90 Plus** (Unisoc T606 / UMS9230), codename **AEOP519**.
 
 ---
 
@@ -12,9 +12,8 @@ Stock ROM partition dumps and bootloader unlock helper scripts for the **Benco V
 
 ## Repository Structure & Downloads
 - **[GitHub Releases](../../releases)** — Core stock partition dumps (`super.img`, `vendor_boot.bin`, `boot.bin`, etc.) exceed Git file size limits and are hosted directly under repository **Releases**.
-- **`images/`** — Small configuration files, device tree blobs, and header binaries.
 - **`fdl/`** — First Download Loader binaries (`fdl1.bin`, `fdl2.bin`) required for UNISOC BROM mode communication.
-- **Scripts** — Custom Windows batch scripts for unlocking and partition management on Slot A and Slot B.
+- **Bootloader_Unlock.zip** — Zip edited from TomKing062's BL Unlock script to work with the Benco V90 Plus.
 
 ---
 

@@ -1,11 +1,14 @@
 # Guide to Unlock Benco V90 Plus's Bootloader (codename AEOP519) 
+
 **As of now I have only fixed the bat files, so currently this will only work on Windows.**
 **This guide assumes that you have installed Unisoc and Spreadtrum Drivers.**
-First, download the Bootloader_Unlock.zip file from this repo.
-Second, locate the file on your computer and unzip it.
-Third, open the newly unzipped directory, click the directory bar of file explorer, and type cmd. This should open a Command Prompt in the directory.
-Fourth, power off your Benco V90 Plus and hold either only volume down or both volume buttons and plug it into your computer. 
-Fifth, go back into the Command Prompt that you opened and run this command to dump every partition: spd_dump.exe --wait 300 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec r all
-Sixth, copy all of the newly dumped files into a safe location, as the bootloader unlock script will need those not in the running directory. Delete all of the dump files in the bootloader unlock directory.
-Seventh, if you have a antivirus, temponary turn it off (when I ran this I almost bricked my device because my antivirus quartined a file) or add a exclusion to that directory.
 
+> ⚠️ **Warning:** Unlocking the bootloader will perform a factory reset and wipe all user data on your device. Make sure you have backed up your important files before proceeding.
+
+1. **Download the Package:** First, download the `Bootloader_Unlock.zip` file from this repo.
+2. **Extract the Archive:** Second, locate the file on your computer and unzip it.
+3. **Open Command Prompt:** Third, open the newly unzipped directory, click the directory bar of File Explorer, and type `cmd`. This should open a Command Prompt in the directory.
+4. **Enter BROM Mode:** Fourth, power off your Benco V90 Plus and hold either only Volume Down or both volume buttons and plug it into your computer.
+5. **Backup All Partitions:** Fifth, go back into the Command Prompt that you opened and run this command to dump every partition:
+   ```cmd
+   spd_dump.exe --wait 300 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec r all

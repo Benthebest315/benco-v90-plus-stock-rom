@@ -6,4 +6,6 @@ Second, locate the file on your computer and unzip it.
 Third, open the newly unzipped directory, click the directory bar of file explorer, and type cmd. This should open a Command Prompt in the directory.
 Fourth, power off your Benco V90 Plus and hold either only volume down or both volume buttons and plug it into your computer. 
 Fifth, go back into the Command Prompt that you opened and run this command to dump every partition: spd_dump.exe --wait 300 fdl fdl1-dl.bin 0x65000800 fdl fdl2-dl.bin 0x9efffe00 exec r all
-Sixth, copy all of the newly dumped files into a safe location, as 
+Sixth, copy all of the newly dumped files into a safe location, as the bootloader unlock script will need those not in the running directory. Delete all of the dump files in the bootloader unlock directory.
+Seventh, if you have a antivirus, temponary turn it off (when I ran this I almost bricked my device because my antivirus quartined a file) or add a exclusion to that directory.
+

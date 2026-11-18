@@ -21,5 +21,11 @@ Stock ROM partition dumps, FDL loaders, and bootloader unlock helper scripts for
 
 ---
 
+## Status & Tested Builds
+- **Bootloader Unlock:** Tested and verified working via `CVE-2022-38694` exploit scripts.
+- **Custom GSI:** Successfully tested and booted **LineageOS GSI** on the Benco V90 Plus (`AEOP519`) using patched `vbmeta` and FastbootD mode. *(A complete flashing guide will be added soon!)*
+
+---
+
 ## Credits & Acknowledgments
 - **Bootloader Unlock Exploit (`CVE-2022-38694`):** Huge credits to [TomKing062](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) for the original UNISOC bootloader unlock implementation used in the helper scripts.

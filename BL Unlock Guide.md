@@ -53,8 +53,8 @@ Because the Benco V90 Plus uses A/B seamless system updates, you must run the ba
 ## Step 5: Run the Bootloader Unlock Script
 1. Power off your phone completely again.
 2. In your `Bootloader_Unlock` folder, double-click (or run via Command Prompt) the `.bat` script matching your active slot:
-   - Run the **Slot A** `.bat` file if your active slot is `_a` (or `a`).
-   - Run the **Slot B** `.bat` file if your active slot is `_b` (or `b`).
+   - Run the **unlock_autopatch_9230_a** `.bat` file if your active slot is `_a` (or `a`).
+   - Run the **unlock_autopatch_9230_b** `.bat` file if your active slot is `_b` (or `b`).
 3. Hold the volume button(s) (**Volume Down** or **Volume Up + Volume Down**) and plug the USB cable into your PC when prompted by the script.
 4. Wait for `spd_dump` and the exploit payload (`gen_spl-unlock.exe`) to complete flashing and reboot the device. Do not unplug the cable until the script finishes.
 
